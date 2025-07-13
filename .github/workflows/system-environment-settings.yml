@@ -4,7 +4,7 @@ on:
 
 defaults:
   run:
-    shell: powershell
+    shell: cmd
     working-directory: workdir
 
 jobs:
@@ -12,7 +12,7 @@ jobs:
     runs-on: ubuntu-latest
     defaults:
       run:
-        shell: powershell
+        shell: cmd
         working-directory: test
     steps:
       - uses: actions/checkout@v3
